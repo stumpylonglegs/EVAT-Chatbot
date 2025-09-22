@@ -336,7 +336,7 @@ async function sendLocationToRasa() {
     message: "hello",
     metadata: userLocation,
   };
-  const res = await fetch("http://localhost:5005/webhooks/rest/webhook", {
+  const res = await fetch("https://evat-chatbot-fnud.onrender.com/webhooks/rest/webhook", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload),
